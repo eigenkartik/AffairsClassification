@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1 style="text-align:center"> Affair or not- Classification</h1>
+        <p style="text-align:center">Kindly input the values for required variables and click on Predict</p>
+            <form action='/predict' method="POST" style="color:blue;text-align:center">
+
+                <input type= 'number'  name='rm'  placeholder="Rate your marriage" step="any" required>
+                <input type= 'number'  name='age'  placeholder="Age" step="any" required>
+                <input type= 'number'  name='ym'  placeholder="Years Married" step="any" required>
+                <input type= 'number'  name='children' placeholder="No. of children" step="any" required>
+                <input type= 'number'  name='religious'  placeholder="religious" step="any" required>
+                <input type= 'number'  name='edu' placeholder="Level of Education" step="any" required>
+                <input type= 'number'  name='occupation'  placeholder="Occupation of wife" step="any" required>
+                <input type= 'number'  name='occupation_husb'  placeholder="Husband's Occupation:" step="any" required>
+
+
+                <input type= 'Submit' value= 'Predict' >
+
+
+            </form>
+
+        <p style="text=align:center"> Attribute details: </p>
+
+        <p> rate_marriage   : How rate marriage, 1 = very poor, 2 = poor, 3 = fair, 4 = good, 5 = very good </p>
+
+        <p>      age             : Age   </p>
+
+        <p>        yrs_married     : No. years married. </p>
+
+        <p>        children        : No. children </p>
+
+        <p>        religious       : How religious, 1 = not, 2 = mildly, 3 = fairly, 4 = strongly </p>
+
+        <p>        educ            : Level of education, 9 = grade school, 12 = high school, 14 = some college, 16 = college graduate,17 = some graduate school, 20 = advanced degree </p>
+
+        <p>        occupation      : 1 = student, 2 = farming, agriculture; semi-skilled, or unskilled worker; 3 = white-collar; 4 = teacher
+                                counselor social worker, nurse; artist, writers; technician, skilled worker, 5 = managerial, administrative, business, 6 = professional with
+                                advanced degree </p>
+
+        <p>        occupation_husb :1 = student, 2 = farming, agriculture; semi-skilled, or unskilled worker; 3 = white-collar; 4 = teacher
+                                counselor social worker, nurse; artist, writers; technician, skilled worker, 5 = managerial, administrative, business, 6 = professional with
+                                advanced degree </p>
+
+
+
+</body>
+</html>
